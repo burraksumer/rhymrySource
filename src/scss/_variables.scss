@@ -1,3 +1,10 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+    font-family: "Inter", sans-serif;
+  }
+
+
 // Colors
 $black: #111;
 $lightGrey: rgba(0,0,0,0.1);
@@ -8,10 +15,8 @@ $primaryColor: #0027EC;
 $transMed: 0.3s;
 
 // Typography
-$sansSerif: 'Roboto', sans-serif;
-$serif: 'Playfair Display', serif;
-$mono: 'IBM Plex Mono', monospace;
-$heavyWeight: 900;
+$sansSerif: 'Inter', sans-serif;
+$heavyWeight: 800;
 
 h1,
 h2,

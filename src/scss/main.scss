@@ -1,11 +1,19 @@
 
+@import url('https://rsms.me/inter/inter.css');
 @import './variables', './content';
+
+html { font-family: 'Inter', sans-serif; }
 
 body {
     font-family: $sansSerif;
     color: $black;
     font-size: 1rem;
     margin: 0;
+    p{
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: '0.5em';
+    }
 }
 
 .main-body {

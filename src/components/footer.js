@@ -30,6 +30,7 @@ export default ({ children }) => {
         <li>{data.site.siteMetadata.author}</li>
         <ListLink to="/privacy/">Privacy</ListLink>
         <ListLink to="/cookies/">Cookies</ListLink>
+        <ListLink to="/app/">App</ListLink>
       </ul>
     </footer>
   )

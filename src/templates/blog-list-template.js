@@ -13,17 +13,17 @@ export default class BlogList extends React.Component {
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
-      currentPage - 1 === 1 ? "/blog/" : (currentPage - 1).toString()
-    const nextPage = "blog/" + (currentPage + 1).toString()
+      currentPage  -1 === 1 ? "/blog/" : "/blog/" + (currentPage - 1).toString()
+    const nextPage = "/blog/" + (currentPage + 1).toString()
 
     return (
       <Layout>
         <Seo
-          title="All blog posts"
-          description="Recent posts from the Bonneville starter theme"
+          title="All posts"
+          description="Recent posts from the Rhymery team"
         />
         <div className="blog-list">
-          <h1>Latest News &amp; Posts</h1>
+          <h1>Latest Poems &amp; Writings</h1>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.frontmatter.path
             return (
@@ -37,7 +37,7 @@ export default class BlogList extends React.Component {
                   <p>{node.excerpt}</p>
                   <div className={styles.meta}>
                     <Link to={node.frontmatter.path}>
-                      <button className="btn">Read Article</button>
+                      <button className="btn">Read More</button>
                     </Link>
                     <h4>{node.frontmatter.date}</h4>
                   </div>

@@ -9,10 +9,12 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <Seo />
+      <Seo 
+      title="Home"
+      description="Homepage of Rhymry"
+      />
       <h1>
-        My name is Bonneville. I'm a starter theme for Gatsby and I like to talk
-        as if I am a living thing
+        My name is Rhymry but you can call me Rhymery.
       </h1>
       <h4 className={styles.feature}>
         {data.allMarkdownRemark.totalCount} Featured Posts
@@ -28,7 +30,7 @@ export default ({ data }) => {
             <p>{node.excerpt}</p>
             <div className={styles.meta}>
               <Link to={node.frontmatter.path}>
-                <button className="btn">Read Article</button>
+                <button className="btn">Read More</button>
               </Link>
               <h4>{node.frontmatter.date}</h4>
             </div>

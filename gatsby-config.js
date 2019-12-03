@@ -6,13 +6,24 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: "/rhytest",
   siteMetadata: {
-    title: `Bonneville`,
-    titleTemplate: `%s | A starter theme for Gatsby`,
-    siteUrl: `https://bonneville.netlify.com`,
-    description: `A starter theme for Gatsby`,
-    author: `Morgan Baker`,
-    twitterUsername: `@bonneville`,
+    title: `Rhymry`,
+    titleTemplate: `%s | Rhymry`,
+    siteUrl: `https://burraksumer.github.io/rhytest/`,
+    description: `A poem site founded by a bunch of literature student who wants to share their works hoping that they are good at writing pretty much, anything.`,
+    author: `Rhymry`,
+    twitterUsername: `@twt`,
+    viewport: "width=device-width, initial-scale=1.0",
+    charset:"UTF-8",
+    keywords: [
+      "poems",
+      "poets",
+      "blog posts",
+      "literature",
+      "english literature",
+      "contemporary literature",
+    ],
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -21,17 +32,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bonneville - Gatsby Starter Theme`,
-        short_name: `Bonneville`,
-        start_url: `/`,
+        name: `Rhymry - A lovely poem site`,
+        short_name: `Rhymry`,
+        start_url: `/rhytest`,
         background_color: `#0027EC`,
         theme_color: `#0027EC`,
         display: `standalone`,
-        icon: `static/favicon.ico`,
+        icon: `static/favicon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
